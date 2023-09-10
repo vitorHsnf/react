@@ -1,0 +1,23 @@
+<!DOCTYPE html>
+
+<html lang="pt-br">
+    <head>
+        <meta charset="UTF-8">
+        <title> Ex 14</title>
+    </head>
+
+    <body>
+        <h1> Ex14: Array Positiva </h1>
+
+        <p id="output"></p>
+        <script src="arrayPositiva.js"></script>
+        <script>
+            const valores = [-1, -10, 5, 4, 10];
+            const res = arrayPositiva(valores);
+            const output = document.getElementById("output");
+            output.innerHTML += `Array: ${valores} <br>`;
+            output.innerHTML += `Array positiva: ${res} <br>`;
+        </script>
+
+    </body>
+</html>

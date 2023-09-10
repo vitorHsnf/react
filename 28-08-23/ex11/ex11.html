@@ -1,0 +1,25 @@
+<!DOCTYPE html>
+
+<html lang="pt-br">
+
+<head>
+    <meta charset="UTF-8">
+    <title> Ex 11</title>
+</head>
+
+<body>
+    <h1> Ex11: Números Primos </h1>
+
+    Digite um número: <input type="number" id="num"> <br>
+    <button onclick="ex11()"> Enviar </button>
+
+    <script src="numPrimo.js"></script>
+
+    <script>
+        function ex11(){
+            num = document.getElementById("num").value;
+            alert(ehPrimo(num));
+        }
+    </script>
+</body>
+</html>

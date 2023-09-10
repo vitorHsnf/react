@@ -1,0 +1,23 @@
+<!DOCTYPE html>
+
+<html lang="pt-br">
+    <head>
+        <meta charset="UTF-8">
+        <title> Ex 13</title>
+    </head>
+
+    <body>
+        <h1> Ex13: Média em Arrays </h1>
+
+        <p id="output"></p>
+        <script src="mediaArray.js"></script>
+        <script>
+            const valores = [1, 3, 3, 4, 10];
+            const res = mediaArray2(valores);
+            const output = document.getElementById("output");
+            output.innerHTML = `Array: ${valores.join(", ")} <br> `;
+            output.innerHTML += `Média: ${res}`;
+        </script>
+
+    </body>
+</html>

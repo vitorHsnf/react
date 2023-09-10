@@ -1,0 +1,25 @@
+<!DOCTYPE html>
+
+<html lang="pt-br">
+
+<head>
+    <meta charset="UTF-8">
+    <title> Ex 18</title>
+</head>
+
+<body>
+    <h1> Ex18: Números Primos 2 </h1>
+
+    Digite um número: <input type="number" id="num"> <br>
+    <button onclick="ex18()"> Enviar </button>
+
+    <script src="ehPrimo.js"></script>
+
+    <script>
+        function ex18(){
+            num = document.getElementById("num").value;
+            alert(`Primo? ${ehPrimo(num)}`);
+        }
+    </script>
+</body>
+</html>

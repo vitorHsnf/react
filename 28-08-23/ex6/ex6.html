@@ -1,0 +1,21 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+    <head>
+        <meta charset="UTF-8">
+        <title> Ex 6 </title>
+    </head>
+
+    <body>
+        <h1> Ex6: Número Invertido </h1>
+        Digite um valor: <input type="text" id="num"> <br>
+        <button onclick="ex6()"> Inverter </button>
+        <script src="invert.js"> </script>
+        <script>
+            function ex6(){
+                num = document.getElementById("num").value.toString();
+                tam = num.length;
+                alert(inverteNumero(num));
+            }
+        </script>
+    </body>
+</html>

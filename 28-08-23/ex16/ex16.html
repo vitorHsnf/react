@@ -1,0 +1,26 @@
+<!DOCTYPE html>
+
+<html lang="pt-br">
+    <head>
+        <meta charset="UTF-8">
+        <title> Ex 16 </title>
+    </head>
+
+    <body>
+        <h1> Ex16: Soma de Dígitos </h1>
+        Digite um numero: <input type="number" id="num"> <br>
+        <button onclick="ex16()">Calcular</button>
+
+        <p id="output"></p>
+        <script src="somaDigitos.js"></script>
+        <script>
+            function ex16(){
+                const numero = document.getElementById("num").value.toString();
+                const res = somaDigitos(numero);
+                const output = document.getElementById("output");
+                output.innerHTML = `Resultado: ${res} <br>`;
+            }
+        </script>
+
+    </body>
+</html>

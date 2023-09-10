@@ -1,0 +1,23 @@
+<!DOCTYPE html>
+
+<html lang="pt-br">
+    <head>
+        <meta charset="UTF-8">
+        <title> Ex19 </title>
+    </head>
+
+    <body>
+        <h1> Ex19: Maior string </h1>
+        <p id="output"></p>
+
+        <script src="maiorString.js"></script>
+
+        <script>
+            const texts = ["hello", "world", "chaeyo"];
+            const res = maiorString2(texts);
+            const output = document.getElementById("output");
+            output.innerHTML = `Array: ${texts} <br>
+                                Maior string: ${res}`;
+        </script>
+    </body>
+</html>

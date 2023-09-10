@@ -1,0 +1,23 @@
+<!DOCTYPE html>
+
+<html lang="pt-br">
+    <head>
+        <meta charset="UTF-8">
+        <title> ex20 </title>
+    </head>
+
+    <body>
+        <h1> Ex20: Concatenação </h1>
+        <p id="output"> </p>
+        <script src="juntaArray.js"></script>
+        <script>
+            let array1 = prompt("Digite a primeira palavra: ");
+            let array2 = prompt("Digite a segunda palavra: ");
+            let novaArray = juntaArray2(array1, array2);
+
+            const output = document.getElementById("output");
+            output.innerHTML = `${novaArray}`;
+        </script>
+
+    </body>
+</html>

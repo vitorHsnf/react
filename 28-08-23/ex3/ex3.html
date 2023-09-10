@@ -1,0 +1,23 @@
+<!DOCTYPE html>
+<html>
+    <head>
+        <title> Ex 3 </title>
+    </head>
+
+    <body>
+        <h1> Ex3: Converter Temperaturas</h1>
+        ºF: <input type="number" id="tempF"> <br>
+        <button onclick="ex3()"> Converter </button>
+        <p id="res"></p>
+        <script>
+            function ex3(){
+                var tempF = document.getElementById("tempF").value;
+                var tempC = convertFtoC2(tempF);
+                var res = document.getElementById("res");
+
+                res.innerHTML = `${tempC.toFixed(0)}ºC`;
+            }
+        </script>
+        <script src="temperature.js"></script>
+    </body>
+</html>

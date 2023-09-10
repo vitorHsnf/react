@@ -1,0 +1,24 @@
+<!DOCTYPE html>
+
+<html lang="pt-br">
+    <head>
+        <meta charset="UTF-8">
+        <title> Ex 10 </title>
+    </head>
+
+    <body>
+        <h1> Ex10: Conta Letras</h1>
+        Digite uma palavra:<input type="text" id="txt"> <br>
+        Digite um caractere: <input type="text" id="char"> <br>
+        <button onclick="ex10()"> Enviar </button>
+
+        <script src="contaTxt.js"></script>
+        <script>
+            function ex10(){
+                text = document.getElementById("txt").value;
+                letter = document.getElementById("char").value;
+                alert(`Ocorrências da letra "${letter}" em "${text}": ${contaLetras2(text, letter)} `);
+            }
+        </script>
+    </body>
+</html>

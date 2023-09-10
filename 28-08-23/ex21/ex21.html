@@ -1,0 +1,25 @@
+<!DOCTYPE html>
+
+<html lang="pt-br">
+    <head>
+        <meta charset="UTF-8">
+        <title> ex21 </title>
+    </head>
+
+    <body>
+        <h1> Ex21: Contador de palavras </h1>
+        Digite o texto: <textarea id="text"></textarea> <br>
+        <button onclick="ex21()"> Enviar </button>
+        <p id="output"> </p>
+        <script src="contaPalavras.js"></script>
+        <script>
+            function ex21(){
+                let texto = document.getElementById("text").value;
+                const output = document.getElementById("output");
+                output.innerHTML = `Quantidade de palavras: ${contaPalavras2(texto)}`;
+            }
+            
+        </script>
+
+    </body>
+</html>

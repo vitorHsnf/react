@@ -1,0 +1,24 @@
+<!DOCTYPE html>
+<html>
+    <head>
+        <title> Ex 8 </title>
+    </head>
+
+    <body>
+        <h1> Ex8: Investimentos </h1>
+        capital inicial : <input type="number" id="C"> <br>
+        tempo de invest : <input type="number" id="t"> <br>
+        taxa de juros: <input type="number" id="i"> <br>
+        <button onclick="ex8()"> Calcular </button>
+        <script src="invest.js"> </script>
+        <script>
+            function ex8(){
+                var capital = parseFloat(document.getElementById("C").value);
+                var taxa_juros = parseFloat(document.getElementById("i").value);
+                var tempo_invest = document.getElementById("t").value;
+                var montante = investe(capital, taxa_juros, tempo_invest)
+                alert(`Investimento: R$ ${montante.toFixed(2)}`);
+            }
+        </script>
+    </body>
+</html>

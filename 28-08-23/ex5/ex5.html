@@ -1,0 +1,23 @@
+<!DOCTYPE html>
+<html>
+    <head>
+        <title> Ex 5 </title>
+    </head>
+
+    
+    <body>
+        <h1> Ex5: Área e Perímetro do Círculo </h1>
+        raio : <input type="text" id="r"> <br>
+        <button onclick="ex5()"> Calcular </button>
+        <p id="res"></p>
+
+        <script src="circulo.js"></script>
+        <script>
+            function ex5(){
+                var raio = document.getElementById("r").value;
+                var res = document.getElementById("res");
+                res.innerHTML = areaPerimetroCirculo2(raio);
+            }
+        </script>
+    </body>
+</html>

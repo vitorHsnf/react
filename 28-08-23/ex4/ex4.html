@@ -1,0 +1,26 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+    <head>
+        <meta charset="UTF-8">
+        <title> Ex 4 </title>
+    </head>
+
+    <body>
+        <h1> Ex4: Área do Triângulo</h1>
+        base : <input type="text" id="b"> <br>
+        altura: <input type="text" id="h"> <br>
+        <button onclick="ex4()"> Calcular </button>
+        <p id="res"></p>
+        <script>
+            function ex4(){
+                var base = document.getElementById("b").value;
+                var altura = document.getElementById("h").value;
+                var res = document.getElementById("res");
+            
+                res.innerHTML = (`Área do triângulo: ${areaTriangulo2(base, altura)} cm²`);
+            }
+        </script>
+        
+        <script src="triangulo.js"></script>
+    </body>
+</html>
